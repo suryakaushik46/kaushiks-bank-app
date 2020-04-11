@@ -1,0 +1,52 @@
+.application-sidebar{
+	-fx-background-color:#007FF5;
+}
+.application-main{
+	-fx-background-color:white;
+}
+.application-forgotpassword{
+	-fx-text-fill:#444444;
+   -fx-background-color:white;
+   -fx-background-radius: 50px ;
+	-fx-border-radius:50px;
+   -fx-border-color:#444444;
+   -fx-cursor:hand;
+   -fx-border-width:1px;
+
+
+}
+.application-login{
+	-fx-text-fill:#444444;
+	-fx-background-radius: 50px ;
+	-fx-border-radius:50px;
+	-fx-background-color:white;
+	-fx-border-color:#444444;
+	-fx-border-style:solid;
+	-fx-border-width:1px;
+
+
+}
+.application-login:hover{
+	-fx-text-fill:white;
+	-fx-background-color:#0DA9F1;
+	-fx-border-color:#0DA9F1;
+	-fx-cursor:hand;
+
+
+}
+
+.application-forgotpassword:hover{
+	-fx-text-fill:white;
+	-fx-background-color:#0DA9F1;
+	-fx-border-color:#0DA9F1;
+	-fx-cursor:hand;
+}
+.application-icon{
+	-fx-fill:#444444;
+}
+.application-icon:hover{
+	-fx-fill:#FF0000;
+}
+.application-back{
+ -fx-background-color:white
+ }

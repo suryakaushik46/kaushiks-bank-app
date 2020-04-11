@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="createaccount.Createaccountcontroller">
+    <content>
+        <AnchorPane prefHeight="600.0" prefWidth="450.0" stylesheets="@../application/application.css">
+            <children>
+                <FontAwesomeIconView glyphName="ARROW_LEFT" layoutX="8.0" layoutY="37.0" onMouseClicked="#Backapp" size="30" styleClass="application-icon" wrappingWidth="12.0" />
+                <FontAwesomeIconView glyphName="CLOSE" layoutX="412.0" layoutY="38.0" onMouseClicked="#closeapp1" size="30" styleClass="application-icon" text="" />
+                <Label layoutX="44.0" layoutY="88.0" text="Account Registration" textFill="#1f0d70">
+                    <font>
+                        <Font name="Avenir Heavy" size="37.0" />
+                    </font>
+                </Label>
+                <Label layoutX="51.0" layoutY="154.0" text="Fill the Following" textFill="#110303">
+                    <font>
+                        <Font name="Courier New Bold" size="24.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="Full_name" layoutX="51.0" layoutY="233.0" prefHeight="30.0" prefWidth="340.0" promptText="Full Name" />
+                <JFXTextField fx:id="Father_Name" layoutX="51.0" layoutY="290.0" prefHeight="30.0" prefWidth="340.0" promptText="Father's name" />
+                <JFXTextField fx:id="Mobile_number" layoutX="51.0" layoutY="346.0" prefHeight="30.0" prefWidth="340.0" promptText="Mobile number" />
+                <JFXComboBox fx:id="Gender" layoutX="51.0" layoutY="410.0" prefHeight="30.0" prefWidth="340.0" promptText="Gender" />
+                <JFXComboBox fx:id="Martial_status" layoutX="51.0" layoutY="470.0" prefHeight="30.0" prefWidth="340.0" promptText="Martial Status" />
+                <JFXComboBox fx:id="Religion" layoutX="55.0" layoutY="527.0" prefHeight="30.0" prefWidth="340.0" promptText="Religion" />
+                <JFXDatePicker fx:id="DOB" layoutX="52.0" layoutY="579.0" prefHeight="30.0" prefWidth="340.0" promptText="Date Of Birth" />
+                <JFXTextField fx:id="City" layoutX="51.0" layoutY="650.0" prefHeight="30.0" prefWidth="340.0" promptText="city" />
+                <JFXTextField fx:id="Adderss" layoutX="51.0" layoutY="709.0" prefHeight="30.0" prefWidth="340.0" promptText="Address" />
+                <Label layoutX="82.0" layoutY="797.0" text="Account Information" textFill="#620eb5">
+                    <font>
+                        <Font name="Copperplate" size="26.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="Account_number" layoutX="51.0" layoutY="876.0" prefHeight="30.0" prefWidth="340.0" promptText="Account no" />
+                <JFXTextField fx:id="Balance" layoutX="51.0" layoutY="937.0" prefHeight="30.0" prefWidth="340.0" promptText="Balance" />
+                <JFXComboBox fx:id="Account_type" layoutX="51.0" layoutY="987.0" prefHeight="30.0" prefWidth="340.0" promptText="Account type" />
+                <JFXPasswordField fx:id="Password" layoutX="51.0" layoutY="1052.0" prefHeight="30.0" prefWidth="340.0" promptText="Password" />
+                <JFXComboBox fx:id="Security_question" layoutX="52.0" layoutY="1112.0" prefHeight="30.0" prefWidth="340.0" promptText="Security Question" />
+                <JFXTextField fx:id="Answer" layoutX="51.0" layoutY="1167.0" prefHeight="30.0" prefWidth="340.0" promptText="Answer" />
+                <ImageView fx:id="Profile_pic" fitHeight="150.0" fitWidth="150.0" layoutX="44.0" layoutY="1235.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/WhatsApp%20Image%202020-03-28%20at%2000.19.11.jpeg" />
+                    </image></ImageView>
+                <Label layoutX="265.0" layoutY="1285.0" text="Profile Pic" textFill="#246b42">
+                    <font>
+                        <Font name="Avenir Next Condensed Bold" size="25.0" />
+                    </font>
+                </Label>
+                <Button layoutX="282.0" layoutY="1332.0" mnemonicParsing="false" onMouseClicked="#browse" styleClass="application-login" text="Browse">
+                    <font>
+                        <Font name="Hiragino Sans GB W6" size="13.0" />
+                    </font></Button>
+                <Button layoutX="132.0" layoutY="1426.0" mnemonicParsing="false" onMouseClicked="#newaccount" prefHeight="40.0" prefWidth="209.0" styleClass="application-login" text="Create Account">
+                    <font>
+                        <Font name="Kefa Regular" size="21.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>
